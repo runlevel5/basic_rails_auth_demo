@@ -1,9 +1,11 @@
 class User < ActiveRecord::Base
   attr_reader :password
 
-  validates :email, presence: true
+  validates :email, presence: true, uniqueness: true
+
+  validates :password, presence: true, on: :create
   validates :password, confirmation: true
-  validates :password_confirmation, presence: true
+  validates :password_confirmation, presence: true, if: Proc.new { |u| u.password.present? }
 
   def password=(password)
     @password = password

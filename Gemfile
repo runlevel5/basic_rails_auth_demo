@@ -13,5 +13,5 @@ gem 'jquery-rails'
 gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
-  gem 'rspec-rails', github: 'rspec/rspec-rails'
+  gem 'rspec-rails'
 end
