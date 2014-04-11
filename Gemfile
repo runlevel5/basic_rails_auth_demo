@@ -1,13 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'rails',     github: 'rails/rails', branch: '4-0-stable'
-gem 'arel',      github: 'rails/arel', branch: '4-0-stable'
+gem 'rails'
+gem 'sqlite3'
 
-gem 'pg'
-
-gem 'coffee-rails', github: 'rails/coffee-rails'
-gem 'sass-rails', github: 'rails/sass-rails'
-
+gem 'coffee-rails'
+gem 'sass-rails'
 gem 'jquery-rails'
 
 gem 'bcrypt', '~> 3.1.7'
